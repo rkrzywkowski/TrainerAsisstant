@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SinglePlayer"
+    android:background="@drawable/side_nav_bar">
+
+
+
+    <TextView
+        android:id="@+id/textViewPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="33dp"
+        android:textSize="40dp"
+        android:text="Imie Nazwisko"
+        android:gravity="center"
+        android:textColor="@color/bordo"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obecności"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textViewPlayer"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeMatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="137dp">
+
+            <TextView
+                android:id="@+id/match"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mecz"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/matchAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="256dp"
+                android:layout_toRightOf="@+id/match"
+                android:text="11"
+                android:width="50dp"
+                android:textAlignment="viewEnd"
+                android:textSize="40dp"
+                android:gravity="end" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeTraining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeMatch"
+            android:layout_alignParentTop="true"
+           >
+
+            <TextView
+                android:id="@+id/training"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trening"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/trainingAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="221dp"
+                android:layout_toRightOf="@+id/training"
+                android:text="1"
+                android:textAlignment="viewEnd"
+                android:width="50dp"
+                android:textSize="40dp"
+                android:gravity="end" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeTraining"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Inne wydarzenia"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/eventAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="68dp"
+                android:layout_toRightOf="@+id/event"
+                android:text="1"
+                android:width="50dp"
+                android:textAlignment="viewEnd"
+                android:textSize="40dp"
+                android:gravity="end" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="334dp"
+        android:text="Statystyki"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/textViewStats">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/marks">
+
+            <TextView
+                android:id="@+id/mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Średnia ocen"
+                android:textSize="25dp" />
+
+
+            <TextView
+                android:id="@+id/markDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/mark"
+                android:layout_marginLeft="-146dp"
+                android:layout_marginTop="-1dp"
+                android:layout_toRightOf="@+id/mark"
+                android:text="(ocena/il.meczy)"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/markPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="152dp"
+                android:layout_toRightOf="@+id/mark"
+                android:height="43dp"
+                android:width="110dp"
+                android:text="9"
+                android:textAlignment="viewEnd"
+                android:textSize="40dp"
+                android:gravity="end" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/goals">
+
+            <TextView
+                android:id="@+id/goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Średnia bramek"
+                android:textSize="25dp" />
+
+
+            <TextView
+                android:id="@+id/goalDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/goal"
+
+                android:layout_marginLeft="-172dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/goal"
+                android:text="(bramki/il.meczy)"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/goalPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="121dp"
+                android:layout_toRightOf="@+id/goal"
+                android:text="30.88"
+                android:width="110dp"
+                android:textAlignment="viewEnd"
+                android:textSize="40dp"
+                android:gravity="end" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/yellowCards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="168dp"
+                android:layout_toRightOf="@+id/yellowCard"
+                android:src="@drawable/zk" />
+
+
+            <TextView
+                android:id="@+id/yellowCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Żółte kartki"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/yellowCardPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="end"
+                android:layout_marginLeft="225dp"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@+id/yellowCard"
+                android:width="50dp"
+                android:text="0"
+                android:textAlignment="viewEnd"
+                android:textSize="40dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/redCards">
+
+            <TextView
+                android:id="@+id/redCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Czerwone kartki"
+                android:textSize="25dp" />
+
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="114dp"
+                android:layout_toRightOf="@+id/redCard"
+                android:src="@drawable/czk" />
+
+            <TextView
+                android:id="@+id/redCardPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="171dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/redCard"
+                android:text="0"
+                android:width="50dp"
+                android:textAlignment="viewEnd"
+                android:textSize="40dp"
+                android:gravity="end" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

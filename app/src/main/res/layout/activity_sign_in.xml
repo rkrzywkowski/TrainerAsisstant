@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_centerInParent="true"
+
+
+        >
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefon"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="30sp"
+
+            app:met_maxCharacters="10"
+
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hasło"
+            android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="30sp"
+
+            app:met_maxCharacters="16"
+
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+
+
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/Remember"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                style="@style/Material.Drawable.CheckBox"
+                android:text="Zapamietaj mnie"
+                android:gravity="center_vertical"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+
+                />
+
+            <TextView
+                android:id="@+id/txtForgotPwd"
+                android:layout_weight="1"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:text="Zapomnialeś hasła?"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.rey.material.widget.Button
+        android:id="@+id/btsign1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:text="Zaloguj"
+        android:textSize="25dp"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@color/cardview_light_background"
+
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:text="Logowanie"
+        android:textAlignment="center"
+        android:textColor="@color/bordo"
+        android:textSize="46sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+
+</RelativeLayout>

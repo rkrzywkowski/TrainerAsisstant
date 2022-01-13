@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/playerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="111dp"
+        android:gravity="center_horizontal"
+        android:hint="Imię"
+        android:textAlignment="center" />
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/playerSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="189dp"
+        android:gravity="center_horizontal"
+        android:hint="Nazwisko"
+        android:textAlignment="center" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/playerPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="272dp"
+        android:gravity="center_horizontal"
+        android:hint="Numer Telefonu"
+        android:textAlignment="center" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/playerDateOfBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="354dp"
+        android:gravity="center_horizontal"
+        android:hint="Data Urodzin"
+        android:inputType="date"
+        android:textAlignment="center" />
+
+    <!--    <ListView-->
+<!--        android:id="@+id/playerPosition"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginTop="23dp"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:hint="Nazwa Drużyny"-->
+<!--        android:textAlignment="center"-->
+<!--        />-->
+
+
+
+
+</RelativeLayout>

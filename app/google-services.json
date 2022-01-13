@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "259943633979",
+    "firebase_url": "https://kasztelan-zarnow.firebaseio.com",
+    "project_id": "kasztelan-zarnow",
+    "storage_bucket": "kasztelan-zarnow.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259943633979:android:049a0e45618fbb596ef81e",
+        "android_client_info": {
+          "package_name": "com.example.kasztelanzarnow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259943633979-g5ofa40likau8ir1fq78q8ehn0ijimum.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kasztelanzarnow",
+            "certificate_hash": "96a7bbb676ad11ab9785e6db5f54b565ee5fc432"
+          }
+        },
+        {
+          "client_id": "259943633979-0tqlu9d1fiviud3r4jrm2rh9qtoqsaeb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5WgmBTxOZ5t378QgRlEmYSv923d9ntFs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259943633979-0tqlu9d1fiviud3r4jrm2rh9qtoqsaeb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

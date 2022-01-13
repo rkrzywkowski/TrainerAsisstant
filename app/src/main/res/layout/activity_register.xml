@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="58dp"
+        android:layout_marginRight="58dp"
+        android:layout_centerInParent="true"
+
+
+        >
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Telefon"
+            android:imeOptions="actionUnspecified"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:met_minCharacters="9"
+            app:met_maxCharacters="10"
+
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Imię"
+            android:textColorHint="@color/white"
+            android:textSize="34sp"
+            android:textColor="@color/white"
+            app:met_maxCharacters="16"
+            android:imeOptions="actionUnspecified"
+            android:maxLines="1"
+            android:singleLine="true"
+
+
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hasło"
+            android:textColorHint="@color/white"
+            android:textSize="34sp"
+            android:textColor="@color/white"
+            app:met_maxCharacters="16"
+            app:met_minCharacters="5"
+
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+
+
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionUnspecified"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:textSize="34sp"
+            android:textColor="@color/white"
+            app:met_maxCharacters="8"
+
+
+
+            />
+
+
+    </LinearLayout>
+
+    <com.rey.material.widget.Button
+        android:id="@+id/btsign1"
+        android:text="Zarejestruj"
+        android:textColor="@color/cardview_light_background"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:background="@drawable/rounded_corner"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="Rejestracja"
+
+        android:textAlignment="center"
+        android:textColor="@color/bordo"
+        android:textSize="46sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+
+</RelativeLayout>
